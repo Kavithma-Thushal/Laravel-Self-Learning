@@ -18,10 +18,20 @@ class EmailController extends Controller
         $details = [
             'email' => $request->email,
             'subject' => $request->subject,
-            'message' => $request->message
+            'name' => $request->name,
+            'address' => $request->address,
+            'date' => $request->date,
+            'paymentMethod' => $request->paymentMethod,
+            'products' => [
+                [
+                    'name' => $request->productName,
+                    'quantity' => $request->productQuantity,
+                    'unitPrice' => $request->productPrice
+                ]
+            ]
         ];
 
         Mail::to($details['email'])->send(new SendEmail($details));
-        return back();
+        return back()->with('success', 'Payment receipt sent successfully.');
     }
 }
