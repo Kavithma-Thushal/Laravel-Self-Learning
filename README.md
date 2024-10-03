@@ -1,7 +1,7 @@
 # 🌟 Laravel Self-Learning 🌟
 
 Welcome to the Laravel Self-Learning project! This educational resource is designed to help you understand the Laravel
-framework.
+framework more thoroughly.
 
 ## 🛠️ Tech Stack
 
@@ -11,9 +11,9 @@ framework.
 ✅ **CSS**<br/>
 ✅ **JS**<br/>
 ✅ **AJAX**<br/>
-✅ **JQuery**<br/>  
+✅ **JQuery**<br/>
 ✅ **Bootstrap**<br/>
-✅ **Blade**<br/>
+✅ **Blades**<br/>
 
 ### 🔥 BackEnd
 
@@ -26,7 +26,7 @@ framework.
 ✅ Managing and migrating databases with Eloquent ORM.<br/>  
 ✅ Routing and middleware basics.<br/>  
 ✅ Authentication and Authorization.<br/>  
-✅ RESTFul APIs with Laravel.<br/>  
+✅ RESTful APIs with Laravel.<br/>  
 ✅ Form handling and validation.<br/>  
 ✅ Basic web security practices in Laravel.<br/>
 
