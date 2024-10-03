@@ -7,7 +7,7 @@
     <title>Laravel-Self-Learning</title>
 </head>
 
-<body class="bg-light">
+<body>
 <div class="container py-5">
     <div class="row justify-content-center">
         <div class="col-md-6">
