@@ -6,7 +6,7 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class EmailSample extends Mailable
+class SendEmail extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -19,6 +19,6 @@ class EmailSample extends Mailable
 
     public function build()
     {
-        return $this->subject($this->details['subject'])->view('emails.email');
+        return $this->subject($this->details['subject'])->view('emails.email_template');
     }
 }
