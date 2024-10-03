@@ -8,7 +8,12 @@ use Illuminate\Support\Facades\Mail;
 
 class EmailController extends Controller
 {
-    public function send(Request $request)
+    public function showForm()
+    {
+        return view('emails.form');
+    }
+
+    public function sendEmail(Request $request)
     {
         $details = [
             'email' => $request->email,
@@ -17,6 +22,6 @@ class EmailController extends Controller
         ];
 
         Mail::to($details['email'])->send(new EmailSample($details));
-        return back()->with('success', 'Email has been sent!');
+        return back();
     }
 }
