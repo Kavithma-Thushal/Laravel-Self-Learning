@@ -6,47 +6,58 @@
     <title>Payment Receipt</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
             padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
         }
 
         .header {
-            background: #fcd116;
-            padding: 10px 20px;
+            background-color: #404040;
+            color: #ffffff;
+            padding: 20px;
             text-align: center;
             font-size: 24px;
         }
 
-        .info {
+        .content {
+            background-color: #fff;
+            padding: 20px;
             margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        .info th {
-            text-align: left;
-            padding-right: 20px;
-        }
-
-        .table {
+        table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
         }
 
-        .table, .table th, .table td {
-            border: 1px solid #ccc;
-        }
-
-        .table th, .table td {
+        th, td {
+            border: 1px solid #ddd;
             padding: 10px;
             text-align: left;
+        }
+
+        th {
+            background-color: #f8f8f8;
+        }
+
+        .footer {
+            font-size: 14px;
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
         }
     </style>
 </head>
 
 <body>
-<main>
-    <div class="header">Payment Receipt</div>
-    <table class="info">
+<div class="header">Payment Receipt</div>
+<div class="content">
+    <table>
         <tr>
             <th>Name</th>
             <td>{{ $details['name'] }}</td>
@@ -64,13 +75,16 @@
             <td>{{ $details['paymentMethod'] }}</td>
         </tr>
     </table>
-    <table class="table">
+    <table>
+        <thead>
         <tr>
             <th>Product</th>
             <th>Quantity</th>
             <th>Unit Price</th>
             <th>Amount</th>
         </tr>
+        </thead>
+        <tbody>
         @foreach ($details['products'] as $product)
             <tr>
                 <td>{{ $product['name'] }}</td>
@@ -79,8 +93,12 @@
                 <td>${{ number_format($product['quantity'] * $product['unitPrice'], 2) }}</td>
             </tr>
         @endforeach
+        </tbody>
     </table>
-</main>
+</div>
+<div class="footer">
+    If you have any issues accessing your account, feel free to contact our support team.<br>
+    Email: support@example.com
+</div>
 </body>
-
 </html>
