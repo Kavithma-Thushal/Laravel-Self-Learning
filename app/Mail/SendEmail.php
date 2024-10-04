@@ -12,13 +12,19 @@ class SendEmail extends Mailable
 
     public $details;
 
-    public function __construct($details)
+    public function __construct($details, $attachmentPath = null, $attachmentName = null)
     {
         $this->details = $details;
+        $this->attachmentPath = $attachmentPath;
+        $this->attachmentName = $attachmentName;
     }
 
     public function build()
     {
-        return $this->subject($this->details['subject'])->view('emails.email_template');
+        $email = $this->subject($this->details['subject'])->view('emails.email_template');
+        if ($this->attachmentPath && file_exists($this->attachmentPath)) {
+            $email->attach($this->attachmentPath, ['as' => $this->attachmentName ?? 'attachment.pdf', 'mime' => 'application/pdf',]);
+        }
+        return $email;
     }
 }

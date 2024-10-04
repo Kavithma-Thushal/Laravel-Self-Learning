@@ -31,7 +31,14 @@ class EmailController extends Controller
             ]
         ];
 
-        Mail::to($details['email'])->send(new SendEmail($details));
-        return back()->with('success', 'Payment receipt sent successfully.');
+        $attachmentPath = null;
+        $attachmentName = null;
+
+        if ($request->hasFile('attachment') && $request->file('attachment')->isValid()) {
+            $attachmentPath = $request->file('attachment')->path();
+            $attachmentName = $request->file('attachment')->getClientOriginalName();
+        }
+        Mail::to($details['email'])->send(new SendEmail($details, $attachmentPath, $attachmentName));
+        return back();
     }
 }

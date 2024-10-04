@@ -16,7 +16,7 @@
                     <h1 class="card-title mb-0">Payment Receipt</h1>
                 </div>
                 <div class="card-body">
-                    <form action="{{ route('send.email') }}" method="post">
+                    <form action="{{ route('send.email') }}" method="post" enctype="multipart/form-data">
                         @csrf
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
@@ -59,6 +59,10 @@
                         <div class="mb-3">
                             <label for="productPrice" class="form-label">Unit Price</label>
                             <input type="number" class="form-control" id="productPrice" name="productPrice" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="attachment" class="form-label">Attachment</label>
+                            <input type="file" class="form-control" id="attachment" name="attachment">
                         </div>
                         <div class="d-grid">
                             <button type="submit" class="btn btn-primary">Send Receipt</button>
