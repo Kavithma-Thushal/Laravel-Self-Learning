@@ -11,7 +11,8 @@ Route::post('/login', [LoginController::class, 'login']);
 Route::middleware(['auth'])->group(function () {
 
     Route::prefix('/customer')->group(function () {
+        Route::prefix('/cus')->group(function () {
         Route::post('/store', [CustomerController::class, 'store']);
+        });
     });
-
 });
