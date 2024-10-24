@@ -22,12 +22,12 @@ framework more thoroughly.
 
 ## 🚀 Learning Objectives
 
-✅ Understanding MVC architecture in Laravel.<br/>  
-✅ Managing and migrating databases with Eloquent ORM.<br/>  
-✅ Routing and middleware basics.<br/>  
-✅ Authentication and Authorization.<br/>  
-✅ RESTful APIs with Laravel.<br/>  
-✅ Form handling and validation.<br/>  
+✅ Understanding MVC architecture in Laravel.<br/>
+✅ Managing and migrating databases with Eloquent ORM.<br/>
+✅ Routing and middleware basics.<br/>
+✅ Authentication and Authorization.<br/>
+✅ RESTful APIs with Laravel.<br/>
+✅ Form handling and validation.<br/>
 ✅ Basic web security practices in Laravel.<br/>
 
 ## 📝 Version
