@@ -55,6 +55,7 @@
 <h1>Customer Management</h1>
 
 <form id="customerForm">
+    <input type="hidden" name="_token" value="{{ csrf_token() }}">
     <input type="text" id="name" placeholder="Customer Name" required>
     <input type="text" id="address" placeholder="Customer Address" required>
     <input type="number" id="salary" placeholder="Customer Salary" required>
@@ -68,6 +69,7 @@
             e.preventDefault();
 
             const formData = {
+                _token: $('input[name="_token"]').val(),
                 name: $('#name').val(),
                 address: $('#address').val(),
                 salary: $('#salary').val(),
