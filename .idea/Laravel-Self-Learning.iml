@@ -724,6 +724,7 @@
       <excludeFolder url="file://$MODULE_DIR$/Frontend-Backend-Connection/vendor/vlucas/phpdotenv" />
       <excludeFolder url="file://$MODULE_DIR$/Frontend-Backend-Connection/vendor/voku/portable-ascii" />
       <excludeFolder url="file://$MODULE_DIR$/Frontend-Backend-Connection/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/Authentication/Breeze/vendor/laravel/breeze" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

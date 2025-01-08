@@ -699,6 +699,7 @@
       <path value="$PROJECT_DIR$/Authentication/Breeze/vendor/nunomaduro/termwind" />
       <path value="$PROJECT_DIR$/Authentication/Breeze/vendor/nunomaduro/collision" />
       <path value="$PROJECT_DIR$/Authentication/Breeze/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/Authentication/Breeze/vendor/laravel/breeze" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.2" />
@@ -710,7 +711,6 @@
       <PhpUnitSettings configuration_file_path="$PROJECT_DIR$/Frontend-Backend-Connection/phpunit.xml" custom_loader_path="$PROJECT_DIR$/Frontend-Backend-Connection/vendor/autoload.php" use_configuration_file="true" />
       <PhpUnitSettings configuration_file_path="$PROJECT_DIR$/DB-Connections/phpunit.xml" custom_loader_path="$PROJECT_DIR$/DB-Connections/vendor/autoload.php" use_configuration_file="true" />
       <PhpUnitSettings configuration_file_path="$PROJECT_DIR$/Authentication/Breeze/phpunit.xml" custom_loader_path="$PROJECT_DIR$/Authentication/Breeze/vendor/autoload.php" use_configuration_file="true" />
-      <PhpUnitSettings configuration_file_path="$PROJECT_DIR$/Authentication/Custom/phpunit.xml" custom_loader_path="$PROJECT_DIR$/Authentication/Custom/vendor/autoload.php" use_configuration_file="true" />
       <PhpUnitSettings configuration_file_path="$PROJECT_DIR$/Email/phpunit.xml" custom_loader_path="$PROJECT_DIR$/Email/vendor/autoload.php" use_configuration_file="true" />
     </phpunit_settings>
   </component>
