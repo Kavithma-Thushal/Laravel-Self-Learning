@@ -28,8 +28,7 @@
 - Password Reset
 - Email Verification
 - Two Factor Authentication
-- Customizable Backend Authentication
-- Backend-only Authentication
+- Backend Authentication
 
 ---
 
@@ -39,7 +38,7 @@
 - Register
 - Password Reset
 - Email Verification
-- Two-factor Authentication
+- Two Factor Authentication
 - Team Management
 - API Token Management via **Sanctum**
 - Session-based Authentication and support for SPAs
@@ -57,7 +56,7 @@
 - OAuth2 Authentication
 - API authentication via tokens (JWT)
 - Third-party integrations via OAuth2
-- Backend-only Authentication
+- Backend Authentication
 
 ---
 
@@ -67,9 +66,7 @@
 - Register
 - Password Reset
 - Email Verification
-- Team billing support
-- Multiple pricing plans for subscriptions
-- User-friendly interface for managing subscriptions
+- Paid Service
 - Frontend + Backend Authentication
 
 ---
